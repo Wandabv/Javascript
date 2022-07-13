@@ -33,6 +33,8 @@ const productos = [
     botonComprar.onclick = () => {
       const productoComprado = productos.find(producto => producto.id === botonComprar.id);
       carrito.push({ nombre: productoComprado.modelo, precio: productoComprado.precio })
+      let productoCompradoJSON = JSON.stringify(productoComprado)
+      localStorage.setItem('productoComprado', productoCompradoJSON)
     }
   
     divProducto.append(imgProducto, nombreProducto, precioProducto, botonComprar);
@@ -56,6 +58,8 @@ const productos = [
   
   let botonCarrito = document.getElementById("btnCarrito")
   botonCarrito.onclick = mostrarCarrito;
+  let itemsfromStorage = localStorage.getItem('productoComprado')
+  let productosBack = JSON.parse(itemsfromStorage)
   
   const btnbuscar = document.getElementById("btnBuscar");
   const inputBuscador = document.getElementById('buscadorInput');
