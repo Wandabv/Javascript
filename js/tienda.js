@@ -58,8 +58,16 @@ const productos = [
   
   let botonCarrito = document.getElementById("btnCarrito")
   botonCarrito.onclick = mostrarCarrito;
-  let itemsfromStorage = localStorage.getItem('productoComprado')
-  let productosBack = JSON.parse(itemsfromStorage)
+  const compraFinal = () => Swal.fire(
+    '¡Felicitaciones por tu compra!',
+    'Te enviaremos los detalles al mail.',
+    'success'
+    )
+
+  const botonComprafinal = document.getElementById("btnComprafinal")
+  botonComprafinal.onclick = compraFinal;
+  
+  
   
   const btnbuscar = document.getElementById("btnBuscar");
   const inputBuscador = document.getElementById('buscadorInput');
