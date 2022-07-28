@@ -91,4 +91,16 @@ const productos = [
        
   }
   
+  
   btnbuscar.onclick = buscarProducto;
+
+  const URL = 'simulador-prestamo/js/products.json'
+
+function renderProducts( productos) {
+	productos.forEach(producto => {
+		document.write(`<li>${producto.name} - precio: ${producto.price}</li>`)
+	});
+}
+fetch( URL )
+.then ( res => res.json() )
+.then (data => { renderProducts(data) })

@@ -1,0 +1,6 @@
+[
+	{ "id": 0, "tipo": "Alimento", "precio": 4000},
+	{ "id": 1, "tipo": "Hueso de goma", "precio": 500},
+	{ "id": 2, "tipo": "Chapita con nombre", "precio": 500},
+	{ "id": 3, "tipo": "Golosina","precio": 100}
+  ]
