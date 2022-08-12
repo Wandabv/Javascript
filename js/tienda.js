@@ -1,3 +1,6 @@
+
+
+
 //STOCK//
 const productos = [
     { id: '0', tipo: "branca y coca cola", modelo: "Fernet Branca 750ml + Coca Cola 2.25lts", precio: 1450, img: "assets/fernet-unacoca.png" },
