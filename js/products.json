@@ -1,6 +1,13 @@
 [
-	{ "id": 0, "tipo": "Alimento", "precio": 4000},
-	{ "id": 1, "tipo": "Hueso de goma", "precio": 500},
-	{ "id": 2, "tipo": "Chapita con nombre", "precio": 500},
-	{ "id": 3, "tipo": "Golosina","precio": 100}
+	{ "id": 0, "tipo": "branca y coca cola", "precio": 1450},
+	{ "id": 1, "tipo": "branca y coca cola", "precio": 1700},
+	{ "id": 2, "tipo": "branca y coca cola", "precio": 3150},
+	{ "id": 3, "tipo": "smirnoff y jugo","precio": 1500},
+	{ "id": 4, "tipo": "absolut y jugo","precio": 3000},
+	{ "id": 5, "tipo": "sky y jugo","precio": 2000},
+	{ "id": 6, "tipo": "cerveza corona","precio": 600},
+	{ "id": 7, "tipo": "cerveza quilmes","precio": 890},
+	{ "id": 8, "tipo": "cerveza patagonia","precio": 2000}
+
+
   ]

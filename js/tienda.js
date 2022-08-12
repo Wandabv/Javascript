@@ -1,10 +1,16 @@
+//STOCK//
 const productos = [
-    { id: '0', tipo: "ropa", modelo: "Chaleco", precio: 1500, img: "assets/chaleco.jpg" },
-    { id: '1', tipo: "juguete", modelo: "Hueso de goma", precio: 800, img: "assets/huesode-goma.jpg" },
-    { id: '2', tipo: "correa", modelo: "Correa extensible", precio: 1000, img: "assets/correa-extensible.jpg" },
-    { id: '3', tipo: "cucha", modelo: "Cama de peluche", precio: 2500, img: "assets/cama-peluche.jpg" },
+    { id: '0', tipo: "branca y coca cola", modelo: "Fernet Branca 750ml + Coca Cola 2.25lts", precio: 1450, img: "assets/fernet-unacoca.png" },
+    { id: '1', tipo: "branca y coca cola", modelo: "Fernet Branca 750ml + Dos Coca Colas 2.25lts", precio: 1700, img: "assets/fernet-2-cocas.jpg" },
+    { id: '2', tipo: "branca y coca cola", modelo: "Dos Fernet Branca 750ml + tres Coca Colas 2.25lts", precio: 3150, img: "assets/dosfernet-trescocas.png" },
+    { id: '3', tipo: "smirnoff y jugo", modelo: " Vodka Smirnoff + dos jugos ", precio: 1500, img: "assets/vodka-smirnoff-dosjugos.jpg"},
+    { id: '4', tipo: "absolut y jugo", modelo: "Vodka Absolut + dos jugos", precio: 3000, img: "assets/unvodka-dosjugos.jpg"},
+    { id: '5', tipo: "sky y jugo", modelo: "Vodka Sky + dos jugos", precio: 2000, img: "assets/vodka-sky-dosjugos.jpg"},
+    { id: '6', tipo: "cerveza corona", modelo: "Pack 6 cercezas Corona", precio: 600, img: "assets/cerveza-corona-pack6.jpg"},
+    { id: '7', tipo: "cerveza quilmes", modelo: "Pack de 7 cervezas Quilmes surtidas.", precio: 890, img: "assets/cerveza-quilmes-pack7-surtido.jpg"},
+    { id: '8', tipo: "cerveza patagonia", modelo: "Pack de 8 cervezas 'Patagonia' surtidas", precio: 2000, img: "assets/cerveza-patagonia.jpg"},
   ];
-  
+
   const contenedorTienda = document.getElementById('contenedorTienda');
   const contenedorCarrito = document.getElementById('contenedorCarrito');
   const carrito = []
@@ -41,7 +47,7 @@ const productos = [
     contenedorTienda.append(divProducto);
   
   }
-  
+
   const mostrarCarrito = () => {
   
     for (const producto of carrito) {
@@ -96,7 +102,7 @@ const productos = [
 
   const URL = 'simulador-prestamo/js/products.json'
 
-function renderProducts( productos) {
+  function renderProducts( productos) {
 	productos.forEach(producto => {
 		document.write(`<li>${producto.name} - precio: ${producto.price}</li>`)
 	});

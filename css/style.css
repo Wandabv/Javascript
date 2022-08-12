@@ -3,18 +3,23 @@ html,body{
     height: 100%;
   }
   
-  .titulo-pagina{
+  header{  
+    background-image: url("../assets/bebidas-alcoholicas-portada.jpg"); opacity: 80%;
+    background-color: rgb(251, 255, 1); 
+    height: 70%;
     width: 100%;
-    height: 15%;
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    background-color: rgb(240, 186, 39);
-    color: rgb(0, 0, 0);
-    margin: 0;
-    padding-top: 12px;
+    text-align: end;
   }
   
+  .titulo-pagina{
+    display: inline-block;
+   
+    background-color: yellow;
+    color: rgb(0, 0, 0); 
+    font-size: 60px;
+    font-style: oblique;
+   
+  }
   .contenedor-tienda{
     padding-top: 3%;
     display: flex;
